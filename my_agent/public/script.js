@@ -13,7 +13,7 @@ async function sendmessage() {
     })
     const data = await res.json();
     const tutorAImsg = data.response
-    const AImessages = document.getElementById("AImsg")
+    const AImessages = document.getElementById("usermsg")
     AImessages.innerHTML += `<p id="tutorAIname" class="tutorAIname"> Tutor AI</p><div id="tutorAImsg" class="tutorAImsg">${tutorAImsg}</div>`
 }
 
