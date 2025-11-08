@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-attachment: fixed;
+    background-clip: border-box;
+    position: fixed;
+    
+}
+nav{
+    display: flex;
+    color: rgb(68, 68, 175);
+    background-color: rgb(179, 179, 224);
+}
+.title{
+    display: flex;
+    width: 100%;
+    font-size: xx-large;
+    font-weight: 700;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.chatinterface{
+    height:calc(100vh - 125px);
+    width: calc(100vw - 50px);
+    margin: 25px;
+    border-radius: 25px;
+    background-color: rgb(179, 179, 224);
+    position: static
+}
+.chatNav{
+    position: fixed;
+    height: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: rgb(68, 68, 175);
+    width: calc(100% - 50px);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.chatName{
+    color: white;
+    font-size: x-large;
+}
+#logo{
+    border: 1px solid rgb(180, 180, 201);
+    background-color: rgb(177, 175, 155);
+    border-radius: 50%;
+    padding: 2px;
+    width: 40px;
+}
+.chatarea{
+    /* border: 1px solid red; */
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+
+
+}
+.usermsg{
+    color: rgb(68, 68, 175);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.AImsg{
+    color: rgb(68, 68, 175);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.yourmsg{
+ background-color: white;
+ padding: 1px 5px;
+ border-radius: 3px;
+ font-weight: 600;
+ color: black;
+}
+.tutorAImsg{
+ background-color: white;
+ padding: 1px 5px;
+ border-radius: 3px;
+ font-weight: 600;
+ color: black;
+}
+.msgsend{
+
+    height: 35px;
+    border-radius: 25px;
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 5px 15px;
+    background-color: white;
+    margin: 5px 10px;
+}
+.chatspace{
+    position: relative;
+    top: 50px;
+    height: calc(100% - 50px);;
+    /* border: 2px solid green; */
+}
+.inputtxt{
+    width: 100%;
+    border: 0px;
+    border-radius: 25px;
+    padding: 0 15px;
+    font-size: larger;
+    outline: none;
+}
+.sendbtn{
+    background-color: white;
+    width: 40px;
+    height: 25px;
+    border: 0px;
+    cursor: pointer;
+}
