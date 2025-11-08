@@ -6,7 +6,7 @@ async function sendmessage() {
     const messages = document.getElementById("usermsg")
     messages.innerHTML += `<p id="username" class="username"> You</p><div id="yourmsg" class="yourmsg">${msg}</div>`
 
-    const res = await fetch("http://127.0.0.1:5000/dev-ui", {
+    const res = await fetch("http://127.0.0.1:5000/api/query", {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: msg })
